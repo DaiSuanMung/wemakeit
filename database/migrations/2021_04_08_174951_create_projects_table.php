@@ -18,12 +18,14 @@ class CreateProjectsTable extends Migration
             $table->string('title');
             $table->longText('intro');
             $table->longText('description');
-            $table->string('image');
+            $table->string('img_title');
+            $table->string('img_desc');
             $table->string('goal');
             $table->string('opt_title');
             $table->string('opt_amount');
             $table->string('opt_desc');
             $table->string('owner_info');
+            $table->string('image');
             $table->timestamps();
         });
     }
